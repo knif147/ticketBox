@@ -1,0 +1,50 @@
+{
+  "name": "my-ticket-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "@ant-design/colors": "^3.1.0",
+    "antd": "3.24.3",
+    "connected-react-router": "^6.5.2",
+    "less": "3.10.3",
+    "less-loader": "5.0.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "prop-types": "^15.7.2",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^7.1.1",
+    "react-router": "^5.1.2",
+    "reduce-reducers": "^1.0.4",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-saga": "^1.1.1",
+    "reselect": "^4.0.0",
+    "yarn": "^1.13.0",
+    "yup": "^0.26.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "not ie <= 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
