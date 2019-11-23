@@ -1,0 +1,41 @@
+.overrideModalStyles() {
+  &.no-close-button {
+    .ant-modal-close {
+      display: none;
+    }
+  }
+  .ant-modal {
+    .ant-modal-header {
+      border-radius: 15px;
+      background-color: white;
+      border: none;
+      .ant-modal-title {
+        .fontBold;
+        color: @dark-gray;
+        font-size: 24px;
+      }
+    }
+    .ant-modal-content {
+      border-radius: 15px;
+      -webkit-box-shadow: @box-shadow-base;
+      -moz-box-shadow: @box-shadow-base;
+      box-shadow: @box-shadow-base;
+      .ant-modal-close-x {
+        i {
+          color: @dark-gray;
+        }
+      }
+      .ant-modal-body {
+        .ant-card {
+          .ant-card-head {
+            .ant-card-extra, .ant-card-head-title {
+              overflow: visible;
+              padding-top: 0;
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

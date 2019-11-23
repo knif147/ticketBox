@@ -1,0 +1,93 @@
+
+.overrideTableStyles () {
+  table {
+    thead.ant-table-thead {
+      tr {
+        th {
+          font-family: @font-family;
+          background: none;
+          border: none !important;
+          &.action-col {
+            text-align: right;
+            .ant-form-item {
+              margin-bottom: 0;
+              .ant-form-item-control-wrapper {
+                .ant-form-item-control {
+                    line-height: 10px;
+                  .ant-checkbox-wrapper {
+                    line-height: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    tbody.ant-table-tbody {
+      tr {
+        &:hover {
+          td {
+            background-color: @redimed-green-faded;
+          }
+        }
+        &.read-only {
+          td {
+            &:not(.editing) {
+              .ant-form-item {
+                .ant-form-item-control {
+                  input {
+                    padding: 0;
+                    border: none;
+                    box-shadow: none;
+                    background: none;
+                    color: inherit;
+                    cursor: text;
+                  }
+                  .ant-calendar-picker {
+                    .ant-calendar-picker-icon {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+      
+          }
+        }
+        td {
+          border: none;
+          vertical-align: middle;
+          padding: 8px 0 8px 16px;
+          word-break: break-word;
+          &.action-col {
+            text-align: right;
+            .ant-form-item-control {
+              padding-right: 16px;
+            }
+          }
+          .ant-form-item {
+            margin-bottom: 0;
+            height: 40px;
+            .ant-form-item-control {
+              line-height: 40px;
+              .ant-form-explain {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .ant-table {
+    .ant-table-content {
+      .ant-table-header {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

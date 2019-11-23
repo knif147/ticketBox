@@ -1,0 +1,318 @@
+.overrideFormControlStyles() {
+  .active-button {
+    font-weight: bold;
+    color: white;
+    background-color: @primary-color;
+    border-color: @primary-color;
+  }
+
+  .ant-card-small
+    > .ant-card-head
+    > .ant-card-head-wrapper
+    > .ant-card-head-title {
+    padding: 0 5px;
+  }
+
+  .round-button {
+    .textOverflow;
+    width: 125px;
+    height: 32px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    -webkit-box-shadow: @box-shadow-base;
+    -moz-box-shadow: @box-shadow-base;
+    box-shadow: @box-shadow-base;
+    max-width: 100%;
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px @box-shadow-color;
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+    &.active {
+      .active-button;
+    }
+    &:hover,
+    &:active {
+      .active-button;
+    }
+    @media screen and (max-width: @screen-xl) {
+      height: 30px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: @screen-sm) {
+      width: auto;
+    }
+    @media (min-width: @screen-md) and (max-width: @screen-lg) {
+      width: auto;
+    }
+
+    @media (min-width: @screen-lg) and (max-width: @screen-xl) {
+      width: auto;
+    }
+    @media (min-width: @screen-xl) and (max-width: @screen-xxl) {
+      width: auto;
+    }
+    img {
+      transition-duration: 0.3s;
+    }
+  }
+
+  .image-button {
+    .round-button;
+    width: 50px;
+    height: 50px;
+    @media screen and (max-width: @screen-xl) {
+      width: 40px;
+      height: 40px;
+    }
+    @media (min-width: @screen-xl) and (max-width: @screen-xxl) {
+      width: 40px;
+      height: 40px;
+    }
+    &:hover,
+    &.active {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      @media screen and (max-width: @screen-xl) {
+        widows: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  .clear-button-style {
+    border: none;
+    margin: 0;
+    padding: 0 15px 0 0;
+    box-shadow: none;
+    background-color: transparent;
+    @media screen and (max-width: @screen-xl) {
+      padding: 0 10px 0 0;
+    }
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+      color: @primary-color;
+    }
+    img {
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+        filter: invert(82%) sepia(48%) saturate(416%) hue-rotate(111deg)
+          brightness(100%) contrast(85%);
+      }
+    }
+  }
+
+  .highlighted-label {
+    .textOverflow;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    -webkit-box-shadow: @box-shadow-base;
+    -moz-box-shadow: @box-shadow-base;
+    box-shadow: @box-shadow-base;
+    padding: 0 15px;
+    @media screen and (max-width: @screen-xl) {
+      height: 30px;
+      line-height: 30px;
+    }
+    &.active {
+      .ant-typography {
+        font-family: @font-family;
+        color: @red;
+      }
+    }
+  }
+  input,
+  textarea {
+    border-radius: 20px;
+    -webkit-box-shadow: @box-shadow-base;
+    -moz-box-shadow: @box-shadow-base;
+    box-shadow: @box-shadow-base;
+    border: none;
+    &:focus,
+    &:active,
+    &:visited {
+      outline: 0;
+      box-shadow: 0 0 0 2px @box-shadow-color;
+    }
+  }
+
+  .input-wrapper-style {
+    margin-bottom: 20px;
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-select-search--inline {
+      .ant-select-search__field {
+        border-radius: 15px;
+        -webkit-box-shadow: @box-shadow-base;
+        -moz-box-shadow: @box-shadow-base;
+        box-shadow: @box-shadow-base;
+      }
+    }
+  }
+  
+.skin-consultation {
+  .ant-form-item-control {
+    line-height: 0;
+    .ant-form-explain {
+      font-size: 12px;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+  }
+}
+
+  .ant-form-item-control {
+    line-height: 30px;
+  }
+  
+  .ant-select {
+    > .ant-select-selection {
+      border-radius: 15px;
+      border: none;
+      -webkit-box-shadow: @box-shadow-base;
+      -moz-box-shadow: @box-shadow-base;
+      box-shadow: @box-shadow-base;
+      &:active,
+      &:focus,
+      &:hover {
+        box-shadow: 0 0 0 2px @box-shadow-color;
+      }
+      .ant-select-selection-selected-value,
+      .ant-select-search {
+        &:focus {
+          outline: none;
+        }
+        .ant-select-search__field {
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      li {
+        border-radius: 15px;
+      }
+    }
+    .ant-select-focused {
+      .ant-select-selection {
+        border-color: @primary-color;
+        box-shadow: 0 0 0 2px @box-shadow-color;
+      }
+    }
+  }
+
+  &.ant-select-dropdown {
+    border-radius: 15px;
+    .ant-select-dropdown-menu {
+      .ant-select-dropdown-menu-item {
+        &:hover:not(.ant-select-dropdown-menu-item-disabled) {
+          background-color: @redimed-green-faded
+        }
+      }
+    }
+  }
+  
+  .ant-upload {
+    &.ant-upload-select {
+      padding-left: 20px;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: @font-family;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  label {
+    &.primary-text {
+      color: @primary-color;
+    }
+  }
+
+  a {
+    color: @primary-color;
+  }
+  .ant-tabs-nav {
+    .ant-tabs-tab-active {
+      color: @primary-color;
+    }
+    .ant-tabs-tab {
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .ant-tabs-ink-bar {
+    background-color: @primary-color;
+  }
+  div [class*='Consultation'] {
+    .ant-card {
+      &.ant-card-bordered {
+        border: none;
+        border-radius: 15px;
+        -webkit-box-shadow: @box-shadow-base;
+        -moz-box-shadow: @box-shadow-base;
+        box-shadow: @box-shadow-base;
+        z-index: 1;
+      }
+      .ant-card-head-wrapper {
+        .ant-card-head-title {
+          padding-top: 30px;
+          padding-bottom: 30px;
+          .ant-typography {
+            margin: 0;
+          }
+        }
+      }
+      .ant-card-body {
+        padding: 24px;
+      }
+    }
+    .ant-card-popover {
+      .ant-card-body {
+        padding: 15px;
+      }
+    }
+  }
+
+  textarea {
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    -webkit-box-shadow: @box-shadow-base;
+    -moz-box-shadow: @box-shadow-base;
+    box-shadow: @box-shadow-base;
+  }
+
+  .readonly-area {
+    input, textarea, .ant-select {
+      border-radius: 15px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.overrideGlobalStyles() {
+  @media screen and (max-width: @screen-xl) {
+    font-size: 13px;
+    .ant-spin-dot {
+      font-size: 20px;
+    }
+    label, p, span, table, input, select, button, .ant-select {
+      font-size: 13px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  .box-shadow {
+    -webkit-box-shadow: @box-shadow-base;
+    -moz-box-shadow: @box-shadow-base;
+    box-shadow: @box-shadow-base;
+  }
+
+  .ant-layout-footer {
+    background: @layout-footer-background;
+  }
+  .ant-layout-header {
+    height: 50px;
+    line-height: 50px;
+  }
+}

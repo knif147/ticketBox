@@ -21,9 +21,11 @@
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5",
     "redux-saga": "^1.1.1",
+    "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "yarn": "^1.13.0",
-    "yup": "^0.26.6"
+    "yup": "^0.26.6",
+    "immutability-helper": "^2.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

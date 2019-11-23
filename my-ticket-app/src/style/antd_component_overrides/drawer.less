@@ -1,0 +1,35 @@
+.overrideDrawerStyles() {
+  .ant-drawer {
+    .ant-drawer-content {
+      .ant-drawer-body {
+        .ant-menu {
+          &:not(.ant-menu-horizontal) {
+            .ant-menu-item {
+              margin: 8px 5%;
+              width: 90%;
+              border-radius: 50px;
+              color: @dark-gray;
+              transition: all 0.05s linear 0.05s;
+              &.ant-menu-item-selected, &.ant-menu-item-active {
+                margin: 8px 5%;
+                background-color: @green-faded;
+                background-color: rgba(96, 202, 189, 0.1);
+                font-weight: bold;
+                &:after {
+                  border: none;
+                }
+              }
+              span {
+                line-height: 32px;
+              }
+              img {
+                margin-bottom: -4px;
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}

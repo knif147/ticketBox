@@ -1,0 +1,95 @@
+.overrideCollapseStyles() {
+  .collapse-wrapper {
+    >.ant-collapse {
+      background-color: #F1F1F1;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border: none;
+      >.ant-collapse-item {
+        background-color: #63C9BB;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 20px;
+        &:last-child {
+          border-radius: 15px;
+        }
+        >.ant-collapse-header {
+          color: #ffffff;
+          display: flex;
+          min-width: 100%;
+          padding: 12px 20px;
+          align-items: center;
+          >i {
+            color: transparent;
+            display: none;
+          }
+        }
+        >.ant-collapse-content {
+          >.ant-collapse-content-box {
+            padding: 0px
+          }
+        }
+        >.ant-collapse-content-active {
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          margin-bottom: 20px;
+          border-color: transparent
+        }
+      }
+    }
+  }
+
+  .sub-collapse-wrapper {
+    >.ant-collapse {
+      background-color: transparent;
+      border: none;
+      >.ant-collapse-item {
+        border: none;
+        >.ant-collapse-header {
+          >i {
+            color: transparent;
+          }
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+  .pmr-wrapper>ul>li>.ant-tree-switcher {
+    color: transparent;
+  }
+  .sub-collapse-wrapper>.ant-collapse>.ant-typography {
+    color: black;
+  }
+
+  .sub-collapse-wrapper {
+    >.ant-collapse {
+      >.ant-collapse-item {
+        >.ant-collapse-header {
+          >.ant-typography {
+            color: black !important;
+            margin-left: 16px;
+          }
+          margin-bottom: 0px;
+          margin-top: 10px;
+          font-weight: normal;
+          >.ant-collapse-arrow {
+            display: none;
+          }
+        }
+        >.ant-collapse-content {
+          border-top: none;
+          margin-bottom: 5px;
+          padding-left: 20px;
+          >.ant-collapse-content-box {
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
+}

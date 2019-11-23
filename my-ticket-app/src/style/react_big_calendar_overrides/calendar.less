@@ -1,0 +1,93 @@
+.overrideReactBigCalendar() {
+
+  .rbc-toolbar-label {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .rbc-timeslot-group {
+    min-height: 45px;
+  }
+  
+  .rbc-header {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .rbc-events-container {
+    margin-right: 15px;
+    z-index: 2;
+  }
+  
+  .rbc-event-label {
+    padding: 0 12px;
+  }
+
+  .rbc-time-slot {
+    position: relative;
+  }
+
+  .rbc-today {
+    background: none !important;
+  }
+
+  
+  .rbc-toolbar {
+    button {
+      padding: 0 15px;
+      height: 35px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      &.rbc-active {
+        color: #fff;
+        background-color: #63C9BB;
+        border-color: #63C9BB;
+      }
+      &:focus {
+        background: none;
+      }
+      &:hover {
+        color: #fff;
+        background-color: #63C9BB;
+        border-color: #63C9BB;
+      };
+      &[disabled] {
+        i {
+          color: #fff;
+        }
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+    .rbc-btn-group.view-btn-group {
+      button {
+        &:focus {
+          color: #fff;
+          background-color: #63C9BB;
+          border-color: #63C9BB;
+        }
+      }
+    }
+    .ant-pagination  {
+      .ant-pagination-item, .ant-pagination-item-link {
+        border-radius: 10px;
+        &:hover, &:focus, &:active {
+          border-color: #63C9BB;
+          a {
+            color: #63C9BB;
+          }
+        }
+        &.ant-pagination-item-active {
+          border-color: #63C9BB;
+          a {
+            color: #63C9BB;
+          }
+        }
+      }
+    
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import "../style/default.less";
+@import "../style/utils.less";
+@import "./antd_component_overrides/global_customization.less";
+@import "./antd_component_overrides/table.less";
+@import "./antd_component_overrides/form_control.less";
+@import "./antd_component_overrides/collapse.less";
+@import "./antd_component_overrides/drawer.less";
+@import "./antd_component_overrides/popover.less";
+@import "./antd_component_overrides/modal.less";
+@import "./react_big_calendar_overrides/calendar.less";
+@import "./slick_slider_overrides/index.less";
+body {
+  font-family: @font-family-light;
+  background-color: #282c34;
+
+  .fontBold {
+    font-family: @font-family;
+  }
+
+  .new-layout {
+    .overrideGlobalStyles();
+    .overrideFormControlStyles();
+    .overrideTableStyles();
+    .overrideCollapseStyles();
+    .overrideModalStyles();
+    .overrideReactBigCalendar();
+    .overrideSlickSlider();
+  }
+
+  .overrideDrawerStyles();
+
+  .overridePopoverStyles();
+
+  .diagnosis-icon-wrapper {
+    &:hover {
+      background-color: @primary-color;
+      img {
+        filter: brightness(0%) invert(1);
+      }
+    }
+  }
+
+  .file-viewer-container-modal {
+    .ant-modal-body {
+      background-color: @primary-color;
+      padding: 50px;
+    }
+  }
+
+  .sidebar-button-group {
+    > div {
+      &.sidebar-button-title {
+        margin: 5px 0 5px;
+      }
+      > button {
+        > .ant-typography {
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+
+  .sidebar-button-group-black {
+    color: #565656 !important;
+  }
+
+  .sidebar-button-group-gray {
+    color: #a8a8a8 !important;
+  }
+
+  .diagnosis-form {
+    display: flex;
+    margin-bottom: 20px;
+    .ant-form-item {
+      flex: 1;
+      margin-bottom: 0px;
+    }
+    button {
+      align-self: center;
+      margin-left: 20px !important;
+    }
+  }
+
+  .signature-wrapper .ant-avatar > img {
+    height: auto;
+    display: inline;
+  }
+
+  .lesion-document-file-viewer {
+    img {
+      width: auto !important;
+      max-height: 500px;
+    }
+    canvas {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  .lesion-document-title-collapse {
+    border-bottom: unset !important;
+    .ant-collapse-header {
+      padding: 0 !important;
+    }
+  }
+
+  .lesion-document-card {
+    border-radius: 15px;
+    -webkit-box-shadow: @box-shadow-base;
+    -moz-box-shadow: @box-shadow-base;
+    box-shadow: @box-shadow-base;
+    margin-top: 20px;
+  }
+}
