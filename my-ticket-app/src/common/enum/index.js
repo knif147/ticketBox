@@ -10,7 +10,6 @@ export const rawData = [
     rowNumber: 8,
     type: 1,
     rowSeat: [
-      { id: 1, isAvailable: true },
       { id: 2, isAvailable: true },
       { id: 3, isAvailable: true },
       { id: 4, isAvailable: true },
@@ -149,14 +148,14 @@ export const rawData = [
     rowSeat: [
       { id: 89, isAvailable: true },
       { id: 90, isAvailable: true },
-      { id: 97, isAvailable: true },
-      { id: 98, isAvailable: true },
+      { id: 91, isAvailable: true },
+      { id: 92, isAvailable: true },
       { id: 93, isAvailable: true },
       { id: 94, isAvailable: true },
       { id: 95, isAvailable: true },
       { id: 96, isAvailable: true },
       { id: 97, isAvailable: true },
-      { id: 92, isAvailable: true },
+      { id: 98, isAvailable: true },
       { id: 99, isAvailable: true },
       { id: 100, isAvailable: true },
       { id: 101, isAvailable: true },
@@ -220,3 +219,18 @@ export const TYPE_OF_SEAT_ENUM_COLOR = {
 };
 
 export const NOT_AVAILABLE_SEAT_ENUM_COLOR = "#6D6D6D";
+export const SELECTED_SEAT_ENUM_COLOR = "#7E5AB0";
+
+export const MAX_SEAT_SELECT_ENUM = 6;
+
+export const PRICE_SEAT_ENUM = {
+  1: {
+    price: 60000
+  },
+  2: {
+    price: 90000
+  },
+  3: {
+    price: 110000
+  }
+};

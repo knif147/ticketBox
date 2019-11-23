@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #21202d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,21 +23,28 @@
 }
 
 .App-main-page {
-  background-color: #e8eaed;
+  background-color: #21202d;
 
   width: 100%;
   height: 100vh;
 }
 
 .App-vertical-layout {
+  position: relative;
   background-color: #21202d;
   width: 50%;
   height: 100%;
   margin: auto;
 }
 
+@media screen and (max-width: 1230px) {
+  .App-vertical-layout {
+    width: 100%;
+  }
+}
+
 .App-header-wrapper {
-  padding: 14px 0;
+  padding: 10px 0;
   color: #e8eaed;
   border-bottom: 1px solid #575858;
 }
@@ -66,13 +73,31 @@
 }
 
 .App-seat-row {
-  height: 30px;
+  height: 10%;
   margin: 6px auto;
   display: flex;
   justify-content: center;
   align-self: center;
 }
 
+.App-seat-wrapper-modal {
+  min-width: 1200px;
+  overflow: auto;
+  background-color: #21202d;
+}
+
+.App-seat-wrapper {
+  background-color: #21202d;
+}
+
+.App-seat-modal {
+  margin: 16px;
+  height: 35px;
+  width: 35px;
+  border: solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .App-seat {
   margin: 4px 8px;
   height: 25px;
@@ -103,7 +128,7 @@
 .App-description-wrapper {
   width: 100%;
   height: auto;
-  padding: 8px;
+  /* padding: 20px; */
 }
 
 .App-description-item {
@@ -128,6 +153,9 @@
 }
 
 .App-ticket-info-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   font-weight: bold;
   background-color: #ffffff;
   opacity: 0.8;
@@ -143,11 +171,18 @@
 .App-ticket-info-left {
   padding-left: 30px;
 }
+.App-ticket-info-container {
+  max-height: 70px;
+  min-height: 70px;
 
+  overflow: auto;
+}
 .App-ticket-info {
   font-size: 16px;
   color: #393852;
+  height: 30px;
 }
+
 .App-ticket-info-price {
   text-align: right;
 }
@@ -175,7 +210,7 @@
 .App-ticket-info-button:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 10px 40px;
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
@@ -231,6 +266,7 @@
 .App-zoom-wrapper {
   text-align: center;
   border-bottom: 1px solid #575858;
+  /* padding-bottom: 20px; */
 }
 
 .App-zoom-button {
@@ -238,4 +274,5 @@
   border: 2px solid "#575858";
   color: #fff;
   margin: 10px;
+  font-weight: bold;
 }

@@ -4,7 +4,8 @@ import update from "immutability-helper";
 export const initialState = {
   loading: false,
   data: {
-    listSeat: []
+    listSeat: [],
+    listSeatSelected: []
   }
 };
 const reducer = (state = initialState, action) => {
@@ -26,6 +27,18 @@ const reducer = (state = initialState, action) => {
           listSeat: { $set: [] }
         },
         loading: { $set: false }
+      });
+
+    case Action.Type.SELECT_SEAT:
+      return update(state, {
+        loading: { $set: true }
+      });
+    case Action.Type.SELECT_SEAT_SUCCESS:
+      return update(state, {
+        loading: { $set: true },
+        data: {
+          listSeatSelected: { $set: action.payload }
+        }
       });
     default:
       return state;
